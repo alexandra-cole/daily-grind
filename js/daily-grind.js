@@ -26,12 +26,23 @@ switch(myDay){
  	break;
 
  	case 2:
-   	today = "Tuesday";
+   	    today = "Tuesday";
+        coffee = {
+            name:"Bubble Tea",
+            pic:"bubble-tea.jpg",
+            alt:"A pic of a yummy bubble tea.",
+            color:"pink",
+            day:"Tuesday",
+            desc:`I like me some Bubble Tea!`
+
+        };
  	break;
 
  	default:
     	today = "Something went wrong!";
 
 }
+
+console.log(coffee);
 
 alert(today);
