@@ -44,7 +44,7 @@ switch(myDay){
             name:"Caramel Latte",
             pic:"caramel-latte.jpg",
             alt:"A pic of a dlicious hot caramel latte",
-            color:"lightbrown",
+            color:"#dbb240",
             day:"Sunday",
             desc:`Caramel latte for the soul.`
 
@@ -58,7 +58,7 @@ switch(myDay){
             name:"Cold Brew",
             pic:"cold-brew.jpg",
             alt:"A pic of a black cold brew coffee.",
-            color:"darkbrown",
+            color:"#47321a",
             day:"Monday",
             desc:`A cold brew strong enough to start the week!`
 
@@ -97,7 +97,7 @@ switch(myDay){
             name:"Frappaccino",
             pic:"frappaccino.jpg",
             alt:"A picture of a blended, ice cold frappaccino.",
-            color:"white",
+            color:"#256925",
             day:"Thursday",
             desc:`Frappaccino for Friday eve, why not?`
 
@@ -123,7 +123,7 @@ switch(myDay){
             name:"Pumpkin Spice Latte",
             pic:"pumpkin-spice-latte.jpg",
             alt:"A pic of a seasonal PSL",
-            color:"orange",
+            color:"#df7f31",
             day:"Saturday",
             desc:`Saturday is the best day, why not celebrate with a PSL!!`
 
