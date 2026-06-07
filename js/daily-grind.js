@@ -30,7 +30,7 @@ const urlParams = new URLSearchParams(queryString);
 
 //retrieve data frm query string if it exists
 if(urlParams.has("day")){
-    myDay = urlParams.get("day")
+    myDay = urlParams.get("day");
 }
 
 // changes string into integer
