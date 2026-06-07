@@ -44,7 +44,7 @@ switch(myDay){
             name:"Caramel Latte",
             pic:"caramel-latte.jpg",
             alt:"A pic of a dlicious hot caramel latte",
-            color:"255-255-204",
+            color:"#dbb240",
             day:"Sunday",
             desc:`Caramel latte for the soul.`
 
@@ -58,7 +58,7 @@ switch(myDay){
             name:"Cold Brew",
             pic:"cold-brew.jpg",
             alt:"A pic of a black cold brew coffee.",
-            color:"lightgreen",
+            color:"#47321a",
             day:"Monday",
             desc:`A cold brew strong enough to start the week!`
 
