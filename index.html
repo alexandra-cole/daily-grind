@@ -42,11 +42,13 @@
 		<h1 class="masthead">LARGEBUCK$ COFFEE</h1>
 		<nav>
 			<ul>
-				<li><a href="#">Sample Link</a></li>
-                <li><a href="#">Sample Link</a></li>
-                <li><a href="#">Sample Link</a></li>
-                <li><a href="#">Sample Link</a></li>
-                <li><a href="#">Sample Link</a></li>
+				<li><a href="index.html?day=0">Sunday</a></li>
+				<li><a href="index.html?day=1">Monday</a></li>
+				<li><a href="index.html?day=2">Tuesday</a></li>
+				<li><a href="index.html?day=3">Wednesday</a></li>
+				<li><a href="index.html?day=4">Thursday</a></li>
+				<li><a href="index.html?day=5">Friday</a></li>
+				<li><a href="index.html?day=6">Saturday</a></li>
 			</ul>
 		</nav>
 	</header>
@@ -60,7 +62,13 @@
 			which makes us wish it was always Fall, as this is one of our top sellers!
 		 </p>
 		-->
-		 <p>
+		<p>This page dynamically generates a different coffee for each day of the week using JavaScript</p>
+		<p>Data is stored in a JavaScript object holding coffee data such as a unique image, alt tag, color, text and a description.</p>
+		<p>Data is loaded to the page using document.querySelector() and document.getElementById()</p>
+		<p>The coffee also changes when links are clicked for each day of the week.<p>
+		<p>This is done by accessing the query string using the URLSearchParams() object, and passing in <b>?day=1</b> for example.</p>
+		<p>Thus all 7 days of the week are available using only one web page via the use of JavaScript</p>
+		<p>
 		 	<b>At LargeBuck$ we aspire to: </b>Aesthetic gentrify YOLO McSweeney's typewriter single-origin coffee. Slow-carb hella listicle lomo, Helvetica single-origin 
 			 coffee butcher stumptown. Chambray try-hard church-key mumblecore, tote bag PBR cardigan. Retro Austin Brooklyn, blog Intelligentsia gentrify jean shorts 
 			 sartorial bicycle rights gastropub. Aesthetic wayfarers Pitchfork, tattooed Carles quinoa meh leggings distillery pork belly banjo. Umami cred lumbersexual 
@@ -85,7 +93,7 @@
      </main>
 	 <footer>
 		<p><small>&copy; 2026 by 
-			YOUR NAME HERE, All Rights Reserved ~ 
+			Alexandra Cole, All Rights Reserved ~ 
 			<a id="html-checker" href="#" target="_blank">Check HTML</a> ~ 
 			<a id="css-checker" href="#"  target="_blank">Check CSS</a></small>
 	   </p>

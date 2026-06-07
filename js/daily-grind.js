@@ -23,6 +23,29 @@ switch(myDay){
 
  	case 0:
     	today =  "Sunday";
+        coffee = {
+            name:"Caramel Latte",
+            pic:"caramel-latte.jpg",
+            alt:"A pic of a dlicious hot caramel latte",
+            color:"lightbrown",
+            day:"Sunday",
+            desc:`Caramel latte for the soul.`
+
+        };
+
+ 	break;
+
+     	case 1:
+    	today =  "Monday";
+        coffee = {
+            name:"Cold Brew",
+            pic:"cold-brew.jpg",
+            alt:"A pic of a black cold brew coffee.",
+            color:"darkbrown",
+            day:"Monday",
+            desc:`A cold brew strong enough to start the week!`
+
+        };
  	break;
 
  	case 2:
@@ -33,7 +56,59 @@ switch(myDay){
             alt:"A pic of a yummy bubble tea.",
             color:"pink",
             day:"Tuesday",
-            desc:`I like me some Bubble Tea!`
+            desc:`I like me some Bubble Tea Tuesday!`
+
+        };
+ 	break;
+
+ 	case 3:
+    	today =  "Wednesday";
+        coffee = {
+            name:"Drip",
+            pic:"drip.jpg",
+            alt:"A pic of black coffee, drip, steaming hot java!",
+            color:"brown",
+            day:"Wednesday",
+            desc:`Hump day calls for drip.`
+
+        };
+ 	break;
+
+    case 4:
+    	today =  "Thursday";
+        coffee = {
+            name:"Frappaccino",
+            pic:"frappaccino.jpg",
+            alt:"A picture of a blended, ice cold frappaccino.",
+            color:"white",
+            day:"Thursday",
+            desc:`Frappaccino for Friday eve, why not?`
+
+        };
+ 	break;
+
+ 	case 5:
+    	today =  "Friday";
+        coffee = {
+            name:"Mocha",
+            pic:"mocha.jpg",
+            alt:"A picture of a warm tasty mocha.",
+            color:"tan",
+            day:"Friday",
+            desc:`You made it to Friday, celebrate with a chocolatey mocha!`
+
+        };
+ 	break;
+
+ 	case 6:
+    	today =  "Saturday";
+        coffee = {
+            name:"Pumpkin Spice Latte",
+            pic:"pumpkin-spice-latte.jpg",
+            alt:"A pic of a seasonal PSL",
+            color:"orange",
+            day:"Saturday",
+            desc:`Saturday is the best day, why not celebrate with a PSL!!`
 
         };
  	break;
@@ -52,6 +127,9 @@ document.getElementById("coffee-cup").innerHTML = coffeeTemplate(coffee);
 
 //xhanges background color of HTML element
 document.querySelector("html").style.backgroundColor = coffee.color;
+
+// change strong tags in template to our color
+document.querySelectorAll("#coffee-cup strong").forEach(el => {    el.style.color = coffee.color;});
 
 function coffeeTemplate(coffee){
     let myReturn = "";
