@@ -28,7 +28,7 @@ console.log(queryString);
 //separate query string parameters
 const urlParams = new URLSearchParams(queryString);
 
-//retrieve data frm query string if it exists
+//retrieve data from query string, if exists
 if(urlParams.has("day")){
     myDay = urlParams.get("day");
 }
