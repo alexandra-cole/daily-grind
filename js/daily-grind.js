@@ -19,6 +19,23 @@ let myDate = new Date();
 let myDay = myDate.getDay();
 let today = "";
 
+//use location object to access querystring (address bar)
+const queryString = window.location.search;
+    
+//output to console    
+console.log(queryString);
+    
+//separate query string parameters
+const urlParams = new URLSearchParams(queryString);
+
+//retrieve data frm query string if it exists
+if(urlParams.has("day")){
+    myDay = urlParams.get("day")
+}
+
+// changes string into integer
+myDay = parseInt(myDay);
+
 switch(myDay){
 
  	case 0:
