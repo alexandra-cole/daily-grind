@@ -148,9 +148,15 @@ document.querySelector("html").style.backgroundColor = coffee.color;
 // change strong tags in template to our color
 document.querySelectorAll("#coffee-cup strong").forEach(el => {    el.style.color = coffee.color;});
 
-const coffeeTemplate = ({ pic, alt, day, name, desc }) => `
-    <p>
-        <img src="images/${pic}" alt="${alt}" id="coffee">
-        <strong>${day}'s Coffee Special:</strong> ${day}'s daily coffee special is <strong>${name}</strong>, ${desc}!
-    </p>
-`;
+// Coffee template function
+function coffeeTemplate(coffee){
+    let myReturn = "";
+    myReturn += `
+        <h2>${coffee.day} Special: ${coffee.name}</h2>
+        <p>
+            <img src="images/${coffee.pic}" alt="${coffee.alt}" id="coffee">
+            ${coffee.desc}
+        </p>
+    `;
+    return myReturn;
+}
